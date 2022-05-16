@@ -8,3 +8,5 @@ Disable_JIT_on_sparc64.patch
 CVE-2017-6004.patch
 upstream-fix-for-cve-2017-7186-upstream-
 patch-from-mariadb-to-fix-stack-frame-si
+CVE-2019-20838.patch
+CVE-2020-14155.patch

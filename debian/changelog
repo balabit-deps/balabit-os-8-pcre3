@@ -1,3 +1,17 @@
+pcre3 (2:8.39-12ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: buffer over-read in JIT
+    - debian/patches/CVE-2019-20838.patch: check if type is not
+      extended Unicode parameter or Unicode new line in 
+      pcre_jit_compile.c.
+    - CVE-2019-20838
+  * SECURITY UPDATE: integer overflow via a large number
+    - debian/patches/CVE-2020-14155.patch: ensure that the number
+      is lower than 256 in pcre_compile.c.
+    - CVE-2020-14155
+
+ -- David Fernandez Gonzalez <david.fernandezgonzalez@canonical.com>  Mon, 16 May 2022 13:25:33 +0200
+
 pcre3 (2:8.39-12build1) focal; urgency=medium
 
   * No-change rebuild for libgcc-s1 package name change.
